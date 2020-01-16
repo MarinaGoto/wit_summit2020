@@ -1,0 +1,29 @@
+@mixin typography-reset {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 100%;
+  line-height: 1.4;
+  font-weight: 400;
+  color:#ffffff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  @include typography-reset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

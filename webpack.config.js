@@ -62,6 +62,17 @@ module.exports = {
         ]
       },
       {
+        test: /\.(ttf|eot|otf|woff|woff2?)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'fonts/[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
         use: [{
           loader: 'url-loader',

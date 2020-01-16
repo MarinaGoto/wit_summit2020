@@ -1,4 +1,3 @@
-// Import styles
 import './main.scss';
 import witLogo from './images/wit_summit_logo.svg';
 import unity from './images/unity.svg';
