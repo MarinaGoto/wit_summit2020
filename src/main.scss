@@ -10,11 +10,12 @@ p {
 .page {
   position: relative;
   min-height: 100%;
+  max-height: 100vh;
   background-position: center;
   background-size: cover;
   margin: 0;
 }
-.padding-page {
+.container-padding {
   padding: 5%;
 }
 
@@ -68,11 +69,19 @@ p {
 
 // banner
 .banner {
+  font-family: Helvetica, sans-serif;
   color: #7938DF;
   h2 {
     font-size: 100px;
   }
 }
+.clip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+
 
 
 // background color
@@ -93,11 +102,12 @@ p {
 }
 
 
-// iamges
+// images
 .speaker-img {
   width: 98%;
+  max-height: 60vh;
   object-fit: contain;
-  margin: 5% auto;
+  margin: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
