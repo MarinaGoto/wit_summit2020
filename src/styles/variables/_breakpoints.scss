@@ -1,0 +1,37 @@
+@import '../functions/index';
+
+@mixin tabletLandscape {
+  @media screen and (max-width: #{rem(1024px)}) {
+    @content;
+  }
+}
+
+@mixin tabletPortrait {
+  @media screen and (max-width: #{rem(768px)}) {
+    @content;
+  }
+}
+
+@mixin phoneLargePortrait {
+  @media screen and (max-width: #{rem(414px)}) {
+    @content;
+  }
+}
+
+@mixin phoneLargeLandscape {
+  @media screen and (max-width: #{rem(736px)}) {
+    @content;
+  }
+}
+
+@mixin phoneSmallPortrait {
+  @media screen and (max-width: #{rem(375px)}) {
+    @content;
+  }
+}
+
+@mixin phoneSmallLandscape {
+  @media screen and (max-width: #{rem(667px)}) {
+    @content;
+  }
+}

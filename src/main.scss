@@ -1,3 +1,7 @@
+// Global variables
+@import 'styles/functions/index';
+@import 'styles/variables/index';
+
 @import 'styles/typography';
 
 body, html {
@@ -14,6 +18,10 @@ p {
   background-position: center;
   background-size: cover;
   margin: 0;
+  @include phoneLargePortrait {
+    min-height: unset;
+    max-height: none;
+  }
 }
 .container-padding {
   padding: 5%;
@@ -29,6 +37,9 @@ p {
 }
 .unity-container {
   margin: 0 20%;
+  @include phoneLargePortrait {
+    margin: 5%;
+  }
 }
 .nav {
   bottom: 0;
@@ -39,9 +50,15 @@ p {
   a {
     color: #ffffff;
   }
+  @include phoneLargePortrait {
+    display: none;
+  }
 }
 .flex {
   display: flex;
+  @include phoneLargePortrait {
+    flex-direction: column;
+  }
 }
 .flex-direction-column {
   flex-direction: column;
@@ -49,6 +66,9 @@ p {
 .half {
   width: 50%;
   padding: 5%;
+  @include phoneLargePortrait {
+    width: auto;
+  }
 }
 
 .program-table {
@@ -64,6 +84,9 @@ p {
 }
 .cell {
   padding-right: 30%;
+  @include phoneLargePortrait {
+    padding-right: 10%;
+  }
 }
 
 
@@ -72,7 +95,10 @@ p {
   font-family: Helvetica, sans-serif;
   color: #7938DF;
   h2 {
-    font-size: 100px;
+    font-size: rem(100px);
+    @include phoneLargePortrait {
+      font-size: rem(40px);
+    }
   }
 }
 .clip {
@@ -103,6 +129,17 @@ p {
 
 
 // images
+
+.unity-img {
+  width: 90%;
+  max-height: 60vh;
+  @include phoneLargePortrait {
+    width: 100%;
+  }
+}
+
+
+
 .speaker-img {
   width: 98%;
   max-height: 60vh;

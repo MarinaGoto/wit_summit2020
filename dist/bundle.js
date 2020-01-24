@@ -86,14 +86,74 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/images/girls.png":
+/*!******************************!*\
+  !*** ./src/images/girls.png ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/1ddc6534b30fa9c8d2cdf31abf6d1d47-girls.png\");\n\n//# sourceURL=webpack:///./src/images/girls.png?");
+
+/***/ }),
+
+/***/ "./src/images/speaker.png":
+/*!********************************!*\
+  !*** ./src/images/speaker.png ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/d350f25793883d83aab81e600b78d759-speaker.png\");\n\n//# sourceURL=webpack:///./src/images/speaker.png?");
+
+/***/ }),
+
+/***/ "./src/images/unity.svg":
+/*!******************************!*\
+  !*** ./src/images/unity.svg ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/18f21f55152d630a2034a845159c5ef4-unity.svg\");\n\n//# sourceURL=webpack:///./src/images/unity.svg?");
+
+/***/ }),
+
+/***/ "./src/images/wit_summit_logo.svg":
+/*!****************************************!*\
+  !*** ./src/images/wit_summit_logo.svg ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/39fac12a13fe339f195d57b60fac81ff-wit_summit_logo.svg\");\n\n//# sourceURL=webpack:///./src/images/wit_summit_logo.svg?");
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// Import styles\n// import './main.scss';\n\nalert('this works!');\n\n\n//# sourceURL=webpack:///./src/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_wit_summit_logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/wit_summit_logo.svg */ \"./src/images/wit_summit_logo.svg\");\n/* harmony import */ var _images_unity_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/unity.svg */ \"./src/images/unity.svg\");\n/* harmony import */ var _images_speaker_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/speaker.png */ \"./src/images/speaker.png\");\n/* harmony import */ var _images_girls_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/girls.png */ \"./src/images/girls.png\");\n\n\n\n\n\n\nconst witLogoImg = document.getElementById('witLogo');\nwitLogoImg.src = _images_wit_summit_logo_svg__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n\nconst unityImg = document.getElementById('unity');\nunityImg.src = _images_unity_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n\nconst speakerImg = document.getElementById('speaker');\nspeakerImg.src = _images_speaker_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\nconst girlsImg = document.getElementById('girls');\ngirlsImg.src = _images_girls_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\n\n\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/main.scss":
+/*!***********************!*\
+  !*** ./src/main.scss ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/main.scss?");
 
 /***/ })
 

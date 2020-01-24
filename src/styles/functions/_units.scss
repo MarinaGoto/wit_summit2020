@@ -1,0 +1,5 @@
+$rootFontSize: 16px;
+
+@function rem($pxValue) {
+  @return unquote(($pxValue / $rootFontSize) + 'rem');
+}
