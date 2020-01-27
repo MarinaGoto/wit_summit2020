@@ -23,6 +23,11 @@ p {
     max-height: none;
   }
 }
+.expandable{
+  min-height: auto;
+  max-height: none;
+}
+
 .container-padding {
   padding: 5%;
 }
@@ -63,6 +68,11 @@ p {
 .flex-direction-column {
   flex-direction: column;
 }
+
+.speaker-padding{
+  padding: 5%;
+}
+
 .half {
   width: 50%;
   padding: 5%;
@@ -72,7 +82,7 @@ p {
 }
 
 .program-table {
-  padding: 10% 0;
+  padding: 5% 0;
 }
 .raw {
   display: flex;
@@ -83,9 +93,9 @@ p {
   padding: 0.5% 0;
 }
 .cell {
-  padding-right: 30%;
+  padding-right: rem(220px);
   @include tabletLandscape {
-    padding-right: 10%;
+    padding-right: rem(180px);
   }
 }
 
@@ -113,6 +123,7 @@ p {
 // background color
 .orange {
   background-color: #F0603C;
+  color: white;
 }
 .black {
   background-color: black;
@@ -149,3 +160,54 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+
+// collapse
+
+.menu-content {
+  text-align: center;
+}
+.collapsible-menu {
+  color: white;
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.collapsible-menu li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.collapsible-menu li:hover {
+  cursor: pointer;
+}
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+}
+label:after{
+  content:'►';
+}
+input#ml {
+  display: none;
+}
+input#design {
+  display: none;
+}
+input#coding {
+  display: none;
+}
+input:checked + label:after {
+  content: "▼";
+}
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-in;
+}
+input:checked ~ .menu-content {
+  max-height: 100vh;
+  width: 70vw;
+}
+
