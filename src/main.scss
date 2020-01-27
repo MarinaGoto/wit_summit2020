@@ -27,7 +27,13 @@ p {
   min-height: auto;
   max-height: none;
 }
-
+.expandable{
+  min-height: auto;
+  max-height: none;
+}
+.full-width{
+ width: 100vw;
+}
 .container-padding {
   padding: 5%;
 }
@@ -105,7 +111,7 @@ p {
   font-family: Helvetica, sans-serif;
   color: #7938DF;
   h2 {
-    font-size: rem(100px);
+    font-size: rem(70px);
     @include tabletLandscape {
       font-size: rem(40px);
     }
@@ -186,21 +192,12 @@ p {
   display: block;
   cursor: pointer;
 }
-label:after{
-  content:'►';
-}
-input#ml {
+
+
+input{
   display: none;
 }
-input#design {
-  display: none;
-}
-input#coding {
-  display: none;
-}
-input:checked + label:after {
-  content: "▼";
-}
+
 .menu-content {
   max-height: 0;
   overflow: hidden;
@@ -209,5 +206,12 @@ input:checked + label:after {
 input:checked ~ .menu-content {
   max-height: 100vh;
   width: 70vw;
+}
+
+input#main:checked + label#mainLabel:after{
+  content: "▼";
+}
+label#mainLabel:after{
+  content:'►';
 }
 
