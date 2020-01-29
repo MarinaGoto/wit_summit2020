@@ -8,6 +8,16 @@ body, html {
   height: 100%;
   margin: 0;
 }
+h2 {
+  font-size: rem(70px);
+  @include laptop {
+    font-size: rem(50px);
+  }
+}
+.sectionTitle {
+  margin-bottom: calc(131 / 1331 * 100%);
+}
+
 p {
   line-height: 2
 }
@@ -87,6 +97,10 @@ p {
   }
 }
 
+.note {
+  padding-top: calc(113 / 1331 * 100%);
+}
+
 .program-table {
   padding: 5% 0;
 }
@@ -94,6 +108,9 @@ p {
   display: flex;
   flex-direction: row;
   padding: 3% 0;
+  @include laptop {
+    padding: 1.5% 0;
+  }
 }
 .small-padding{
   padding: 0.5% 0;
@@ -112,6 +129,7 @@ p {
   color: #7938DF;
   h2 {
     font-size: rem(70px);
+
     @include tabletLandscape {
       font-size: rem(40px);
     }
@@ -122,6 +140,8 @@ p {
   overflow: hidden;
   text-overflow: clip;
 }
+
+
 
 
 
@@ -156,16 +176,23 @@ p {
 }
 
 
+// Images
 
-.speaker-img {
+.img {
   width: 98%;
-  max-height: 60vh;
-  object-fit: contain;
-  margin: auto;
-  background-size: cover;
+  height: 60vh;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
+  background-size: contain;
 }
+
+.team {
+  background-image: url('images/team.png');
+}
+.volunteer {
+  background-image: url('images/mariana.png');
+}
+
 
 
 // collapse

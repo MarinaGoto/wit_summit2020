@@ -1,5 +1,11 @@
 @import '../functions/index';
 
+@mixin laptop {
+  @media screen and (max-width: #{rem(1680px)}) {
+    @content;
+  }
+}
+
 @mixin tabletLandscape {
   @media screen and (max-width: #{rem(1024px)}) {
     @content;
