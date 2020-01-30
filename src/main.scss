@@ -21,6 +21,14 @@ h2 {
 p {
   line-height: 2
 }
+
+.italic{
+  font-style: italic;
+}
+
+
+
+
 .page {
   position: relative;
   min-height: 100%;
@@ -115,11 +123,22 @@ p {
 .small-padding{
   padding: 0.5% 0;
 }
+.zero-padding{
+  padding: 0;
+}
+
 .cell {
   padding-right: rem(220px);
   @include tabletLandscape {
     padding-right: rem(180px);
   }
+}
+.border {
+  border-top: 0.1px solid white;
+  border-bottom: 0.1px solid white;
+  padding-top: calc(32 / 1331 * 100%);
+  margin-top: calc(32 / 1331 * 100%);
+  margin-bottom: calc(32 / 1331 * 100%);
 }
 
 
@@ -165,7 +184,7 @@ p {
 }
 
 
-// images
+// Images
 
 .unity-img {
   width: 90%;
@@ -174,9 +193,6 @@ p {
     width: 100%;
   }
 }
-
-
-// Images
 
 .img {
   width: 98%;
@@ -192,53 +208,113 @@ p {
 .volunteer {
   background-image: url('images/mariana.png');
 }
+.maja {
+  background-image: url('images/speakers/maja.png');
+  width: 60%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 
 
 // collapse
-
-.menu-content {
-  text-align: center;
-}
-.collapsible-menu {
-  color: white;
-}
-.collapsible-menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-.collapsible-menu li {
-  display: block;
-  width: 100%;
-  padding: 10px;
-}
-.collapsible-menu li:hover {
-  cursor: pointer;
-}
-.collapsible-menu label {
-  display: block;
-  cursor: pointer;
-}
-
-
 input{
   display: none;
 }
-
 .menu-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height .5s ease-in;
 }
 input:checked ~ .menu-content {
-  max-height: 100vh;
-  width: 70vw;
+  max-height: 1000vh;
 }
 
-input#main:checked + label#mainLabel:after{
+input#mod1:checked + label#mod1Label:after{
   content: "▼";
 }
-label#mainLabel:after{
+label#mod1Label:after{
   content:'►';
 }
+input#mod2:checked + label#mod2Label:after{
+  content: "▼";
+}
+label#mod2Label:after{
+  content:'►';
+}
+.track {
+  line-height: rem(40px);
+}
+.track:hover {
+  text-decoration: underline;
+}
+.track-padding {
+  padding-top: rem(30px);
+}
+
+
+.track-box {
+  font-size: rem(25px);
+  line-height: rem(55px);
+  justify-content: space-around;
+  width: 65vw;
+
+
+  @include laptop {
+    font-size: rem(16px);
+    line-height: rem(22px);
+  }
+
+  .left{
+    width: 50%;
+    padding: 5%;
+
+  }
+  .right{
+    width: 50%;
+    padding: 5%;
+
+  }
+
+  .level {
+    text-align: right;
+  }
+  .workshopTitle {
+    font-size: rem(40px);
+    line-height: rem(58px);
+    text-decoration: underline;
+    padding-top: rem(50px);
+    padding-bottom: 14%;
+    @include laptop {
+      font-size: rem(22px);
+      line-height: rem(34px);
+    }
+  }
+
+  .speakerNameSmall {
+    padding-bottom: 5%;
+  }
+
+  .req {
+    font-size: rem(16px);
+    padding-top: 6%;
+  }
+
+  .speaker-box {
+    display: flex;
+  }
+
+  .speakerName {
+    font-size: rem(150px);
+    line-height: rem(180px);
+    text-decoration: underline;
+    @include laptop {
+      font-size: rem(55px);
+      line-height: rem(80px);
+    }
+  }
+}
+
 
