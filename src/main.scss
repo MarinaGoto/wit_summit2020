@@ -18,11 +18,17 @@ h3 {
   line-height: calc(3vw + 3vh + .5vmin);
 }
 .sectionTitle {
-  margin-bottom: calc(131 / 1331 * 100%);
+  margin-bottom: 4vh;
 }
 
 p {
-  font-size: calc(0.6vw + 0.6vh + .5vmin);
+  font-size: calc(0.45vw + 0.45vh + .5vmin);
+  letter-spacing: -0.0001vw;
+  line-height: calc(1.5vw + 1.5vh + .5vmin);
+  margin: 0;
+}
+label {
+  font-size: calc(0.45vw + 0.45vh + .5vmin);
   letter-spacing: -0.0001vw;
   line-height: calc(1.2vw + 1.2vh + .5vmin);
 }
@@ -50,7 +56,6 @@ a {
   }
 }
 .expandable{
-  min-height: auto;
   max-height: none;
 }
 .full-width{
@@ -111,16 +116,9 @@ a {
   padding-top: calc(113 / 1331 * 100%);
 }
 
-.program-table {
-  padding: 5% 0;
-}
 .raw {
   display: flex;
   flex-direction: row;
-  padding: 3% 0;
-  @include laptop {
-    padding: 1.5% 0;
-  }
 }
 .small-padding{
   padding: 0.5% 0;
@@ -138,9 +136,10 @@ a {
 .border {
   border-top: 0.1px solid white;
   border-bottom: 0.1px solid white;
-  padding-top: calc(32 / 1331 * 100%);
-  margin-top: calc(32 / 1331 * 100%);
-  margin-bottom: calc(32 / 1331 * 100%);
+  padding-top: 1.4vh;
+  margin-top: 2.2vh;
+  margin-bottom: 2.2vh;
+  align-items: baseline;
 }
 
 
@@ -197,6 +196,14 @@ a {
   background-size: contain;
 }
 
+.speakerImg {
+  width: 70%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
 .team {
   background-image: url('images/team.png');
 }
@@ -205,11 +212,6 @@ a {
 }
 .maja {
   background-image: url('images/speakers/maja.png');
-  width: 60%;
-  height: 30vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 
@@ -246,7 +248,7 @@ label#mod2Label:after{
   text-decoration: underline;
 }
 .track-padding {
-  padding-top: rem(30px);
+  padding-top: 2.2vh;
 }
 
 
@@ -272,20 +274,15 @@ label#mod2Label:after{
     padding: 5%;
 
   }
-
   .level {
     text-align: right;
   }
   .workshopTitle {
-    font-size: rem(40px);
-    line-height: rem(58px);
+    font-size: 1.4vw;
+    line-height: 2.3vw;
     text-decoration: underline;
     padding-top: rem(50px);
     padding-bottom: 14%;
-    @include laptop {
-      font-size: rem(22px);
-      line-height: rem(34px);
-    }
   }
 
   .speakerNameSmall {
@@ -302,13 +299,7 @@ label#mod2Label:after{
   }
 
   .speakerName {
-    font-size: rem(150px);
-    line-height: rem(180px);
     text-decoration: underline;
-    @include laptop {
-      font-size: rem(55px);
-      line-height: rem(80px);
-    }
   }
 }
 
