@@ -48,6 +48,12 @@ span {
   font-style: italic;
 }
 
+.underlineTitle {
+  font-size: calc(0.6vw + 0.6vh + .5vmin);
+  line-height: 2.3vw;
+  text-decoration: underline;
+}
+
 .email {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 48%;
@@ -67,10 +73,11 @@ span {
   background-size: cover;
   margin: 0;
   @include tabletLandscape {
-    min-height: unset;
+    min-height: 50vh;
     max-height: none;
   }
 }
+
 .expandable{
   max-height: none;
 }
@@ -96,7 +103,19 @@ span {
   margin: -7vh 20% 0 20%;
   text-align: center;
   @include phoneLargePortrait {
-    margin: -7vh 5% 0 5%;
+    height: 70vh;
+    padding-top: 20vh;
+    margin: 0;
+  }
+}
+.witLogo {
+  width: 13%;
+  min-height: 50px;
+  @include tabletLandscape {
+    width: 18%;
+  }
+  @include phoneLargePortrait {
+    width: 25%;
   }
 }
 .nav {
@@ -126,6 +145,10 @@ span {
 
 .sponsor {
   padding: 10vw 6vw;
+
+  @include tabletLandscape {
+    padding: 6vw 0;
+  }
 }
 
 .speaker-padding{
@@ -158,7 +181,7 @@ span {
 .cell {
   padding-right: rem(220px);
   @include tabletLandscape {
-    padding-right: rem(180px);
+    padding-right: rem(20px);
   }
 }
 .border {
@@ -233,6 +256,10 @@ span {
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+
+  @include tabletLandscape {
+    width: 8%;
+  }
 }
 
 
@@ -326,12 +353,7 @@ label#mod2Label:after{
   }
 }
 
-.underlineTitle {
-  font-size: 1.4vw;
-  line-height: 2.3vw;
-  text-decoration: underline;
 
-}
 
 .underlineTitlePadding {
   padding-top: rem(50px);
@@ -358,7 +380,7 @@ label#mod2Label:after{
     flex-direction: column;
 
     a {
-      line-height: 3vw;
+      line-height: 7vw;
     }
   }
 }
@@ -374,5 +396,11 @@ label#mod2Label:after{
   margin-bottom: 5px;
   @include tabletLandscape {
     display: none;
+  }
+}
+
+.order2 {
+  @include tabletLandscape {
+    order: 2;
   }
 }
