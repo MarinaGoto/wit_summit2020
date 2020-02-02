@@ -6,6 +6,12 @@
   }
 }
 
+@mixin laptopSmall {
+  @media screen and (max-width: #{rem(1200px)}) {
+    @content;
+  }
+}
+
 @mixin tabletLandscape {
   @media screen and (max-width: #{rem(1024px)}) {
     @content;
