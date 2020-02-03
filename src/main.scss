@@ -437,9 +437,10 @@ label#mod2Label:after{
 
   @include tabletLandscape {
     flex-direction: column;
+    padding-bottom: 10vw;
 
     a {
-      line-height: 7vw;
+      line-height: 9vw;
     }
   }
 }
