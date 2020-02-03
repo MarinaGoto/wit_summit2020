@@ -17,6 +17,7 @@ h3 {
   letter-spacing: -0.0001vw;
   line-height: calc(3vw + 3vh + .5vmin);
 }
+
 .sectionTitle {
   margin-bottom: 4vh;
 }
@@ -69,7 +70,6 @@ span {
 .underlineTitle {
   font-size: calc(0.6vw + 0.6vh + .5vmin);
   line-height: 3vw;
-  text-decoration: underline;
 
   @include tabletLandscape {
     line-height: 4vw;
@@ -86,6 +86,9 @@ span {
   @include phoneLargePortrait {
     margin-top: 8vw;
   }
+}
+.zero-height {
+  line-height: 0;
 }
 
 
@@ -227,10 +230,9 @@ span {
 .border {
   border-top: 0.1px solid white;
   border-bottom: 0.1px solid white;
-  padding-top: 1.4vh;
+  padding-top: 4.4vh;
   margin-top: 2.2vh;
   margin-bottom: 2.2vh;
-  align-items: baseline;
 }
 
 
@@ -287,10 +289,14 @@ span {
 
 .speakerImg {
   width: 70%;
-  height: 30vh;
+  height: 15vh;
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
   @include tabletLandscape {
     width: 55%;
     height: 20vh;
@@ -322,35 +328,51 @@ span {
 .maja {
   background-image: url('images/speakers/maja.png');
 }
+.alise {
+  background-image: url('images/speakers/alise.png');
+}
+.alina {
+  background-image: url('images/speakers/alina.png');
+}
+.johannes {
+  background-image: url('images/speakers/jo.png');
+}
 .soprasteria {
   background-image: url('images/sponsors/Sopra_Steria_logo.svg');
 }
 
 // collapse
-input{
-  display: none;
+
+.ex .hide {
+  height: 0;
+  overflow: hidden;
+  display: block;
+  transition: all 0.5s ease;
+}
+.inner {
+  padding: rem(10px);
+}
+.ex input[type="checkbox"]:checked + .hide {
+  display: table;
+  height: 50vh; /* any arbitrary height but best at the minimum initial height you would want. */
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .menu-content {
   max-height: 0;
-  overflow: hidden;
   transition: max-height .5s ease-in;
 }
-input:checked ~ .menu-content {
-  max-height: 1000vh;
+
+input{
+  display: none;
 }
 
-input#mod1:checked + label#mod1Label:after{
-  content: "▼";
-}
-label#mod1Label:after{
+label:after{
   content:'►';
 }
-input#mod2:checked + label#mod2Label:after{
-  content: "▼";
-}
-label#mod2Label:after{
-  content:'►';
-}
+
 .track {
   line-height: rem(40px);
   @include tabletLandscape {
@@ -368,18 +390,17 @@ label#mod2Label:after{
 .track-box {
   justify-content: space-around;
   width: 70vw;
+  margin-bottom: 5vh;
 
   .left{
-    width: 50%;
-    padding: 3vw;
+    width: 20%;
 
     @include tabletLandscape {
       width: 90%;
     }
   }
   .right{
-    width: 50%;
-    padding: 5%;
+    width: 80%;
     @include tabletLandscape {
       width: 90%;
     }
@@ -393,17 +414,23 @@ label#mod2Label:after{
   }
 
   .req {
-    padding-top: 6%;
+    padding-top: 2%;
   }
 
   .speaker-box {
     display: flex;
+    flex-direction: column;
     @include tabletLandscape {
       justify-content: space-between;
     }
   }
 
   .speakerName {
+    font-size: 1vw;
+    letter-spacing: -0.0001vw;
+    line-height: 3vw;
+  }
+  .speakerName:hover {
     text-decoration: underline;
   }
 }
@@ -464,3 +491,5 @@ label#mod2Label:after{
     order: 2;
   }
 }
+
+
