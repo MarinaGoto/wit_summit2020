@@ -233,10 +233,6 @@ span {
 
 .cell {
   padding-right: 15%;
-  //padding-right: rem(220px);
-  @include tabletLandscape {
-    padding-right: rem(20px);
-  }
 }
 
 .border {
@@ -442,6 +438,10 @@ label:after{
 .track {
   width: 30%;
   padding-right: 4vw;
+
+  @include tabletLandscape {
+    width: 100%;
+  }
 }
 
 .track-padding {
@@ -562,6 +562,9 @@ label:after{
 .bottomTrackBox {
   padding-top: 90%;
   padding-bottom: 10vh;
+  @include tabletLandscape {
+    padding-top: 5%;
+  }
 }
 .speakerName {
   font-size: 1vw;
@@ -573,7 +576,16 @@ label:after{
 }
 .topTrackBox {
   height: 20vh;
+  @include tabletLandscape {
+    height: auto;
+  }
 }
 .titleBox {
   padding-bottom: 4vh;
 }
+.noneTablet {
+  @include tabletLandscape {
+    display: none;
+  }
+}
+
