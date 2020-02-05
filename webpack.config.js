@@ -5,6 +5,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+
 // This is main configuration object.
 // Here you write different options and tell Webpack what to do
 module.exports = {
@@ -102,6 +103,11 @@ module.exports = {
     // Webpack HTML Plugin
     //
     new HtmlWebpackPlugin({template: "./src/templates/index.html"}),
+    new HtmlWebpackPlugin({
+      template: "./src/templates/test/index.html",
+      filename: 'test/index.html'
+    }),
+
     new MiniCssExtractPlugin({template: "./src/main.scss"}),
   ],
 };
