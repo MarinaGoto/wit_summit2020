@@ -1,6 +1,6 @@
 # WiT Oslo SUmmit 2020 Spalsh
 
-Spalsh for the WiT Oslo SUmmit 2020
+Splash for the WiT Oslo SUmmit 2020
 
 ## Getting Started
 
