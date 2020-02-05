@@ -78,10 +78,6 @@ span {
   }
 }
 
-.italic{
-  font-style: italic;
-}
-
 .underlineTitle {
   font-size: calc(0.7vw + 0.7vh + .5vmin);
   line-height: 2.5vw;
@@ -236,11 +232,13 @@ span {
 }
 
 .cell {
-  padding-right: rem(220px);
+  padding-right: 15%;
+  //padding-right: rem(220px);
   @include tabletLandscape {
     padding-right: rem(20px);
   }
 }
+
 .border {
   border-top: 0.1px solid white;
   border-bottom: 0.1px solid white;
@@ -331,13 +329,25 @@ span {
   }
 }
 
-
+.lunch {
+  position: absolute;
+  margin-top: 12%;
+  width: 11vw;
+  height: 15vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-image: url('images/lunch_graphics.svg');
+}
 .team {
   background-image: url('images/team.png');
 }
 .volunteer {
   background-image: url('images/mariana.png');
 }
+
+// Speakers images
+
 .maja {
   background-image: url('images/speakers/maja.png');
 }
@@ -350,6 +360,8 @@ span {
 .johannes {
   background-image: url('images/speakers/jo.png');
 }
+
+// Sponsors logo
 
 .soprasteria {
   background-image: url('images/sponsors/Sopra_Steria_logo.svg');
@@ -548,7 +560,7 @@ label:after{
   padding-top: rem(50px);
 }
 .bottomTrackBox {
-  padding-top: 20vh;
+  padding-top: 90%;
   padding-bottom: 10vh;
 }
 .speakerName {
