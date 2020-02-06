@@ -94,6 +94,12 @@ span {
   }
 }
 
+.underlineTablet {
+  @include tabletLandscape {
+    text-decoration: underline;
+  }
+}
+
 .email {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 48%;
@@ -142,6 +148,7 @@ span {
     font-size: calc(1vw + 1vh + .5vmin);
     letter-spacing: -0.001vw;
     list-style-type: none;
+    margin-top: 0;
   }
 }
 .unity-container {
@@ -153,16 +160,7 @@ span {
     margin: 0;
   }
 }
-.witLogo {
-  width: 13%;
-  min-height: 50px;
-  @include tabletLandscape {
-    width: 18%;
-  }
-  @include phoneLargePortrait {
-    width: 30%;
-  }
-}
+
 .nav {
   bottom: 0;
   position: absolute;
@@ -313,6 +311,25 @@ span {
   @include tabletLandscape {
     width: 55%;
     height: 20vh;
+  }
+}
+
+.unity {
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url('images/unity.svg');
+}
+
+.witLogo {
+  width: 11vw;
+  height: 7vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('images/wit_summit_logo.svg');
+  @include tabletLandscape {
+   width: 16vw;
   }
 }
 
