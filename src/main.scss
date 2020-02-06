@@ -148,7 +148,7 @@ span {
   margin: -7vh 20% 0 20%;
   text-align: center;
   @include phoneLargePortrait {
-    height: 70vh;
+    height: 65vh;
     padding-top: 20vh;
     margin: 0;
   }
@@ -237,7 +237,7 @@ span {
 .cell {
   padding-right: 15%;
   @include tabletLandscape {
-    padding-right: 20%;
+    padding-right: 24%;
   }
 }
 
@@ -324,12 +324,12 @@ span {
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
-  background-image: url('images/lunch_graphics.svg');
+  background-image: url('images/lunch.svg');
 
   @include tabletLandscape {
     margin-top: 40%;
-    width: 18vw;
-    height: 15vh;
+    width: 24vw;
+    height: 18vh;
   }
 }
 .team {
@@ -367,11 +367,8 @@ span {
   background-size: contain;
 
   @include tabletLandscape {
-    width: 20%;
-    height: 15vh;
-  }
-  @include phoneLargePortrait {
-    height: 10vh;
+    width: 15%;
+    height: 4vh;
   }
 }
 
