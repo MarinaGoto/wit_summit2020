@@ -764,3 +764,11 @@ label:after{
     margin-bottom: 15%;
   }
 }
+
+.halfWorkshop {
+  width: 50%;
+  padding: 5%;
+  @include tabletPortrait {
+    width: auto;
+  }
+}

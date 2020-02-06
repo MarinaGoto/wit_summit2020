@@ -116,10 +116,17 @@ module.exports = {
       filename: 'uxintro/index.html'
     }),
     new HtmlWebpackPlugin({
-        template: "./src/templates/design/index.html",
-        filename: 'design/index.html'
+      template: "./src/templates/design/index.html",
+      filename: 'design/index.html'
     }),
-
+    new HtmlWebpackPlugin({
+      template: "./src/templates/codingintro/index.html",
+      filename: 'codingintro/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/templates/coding/index.html",
+      filename: 'coding/index.html'
+    }),
 
     new MiniCssExtractPlugin({template: "./src/main.scss"}),
   ],
