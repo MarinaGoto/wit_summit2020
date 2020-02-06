@@ -28,6 +28,10 @@ h4 {
   font-size: calc(0.7vw + 0.7vh + .5vmin);
   letter-spacing: -0.0001vw;
   line-height: 2.5vw;
+  @include phoneLargePortrait {
+    font-size: calc(1vw + 1vh + .5vmin);
+    line-height: calc(2vw + 2vh + .5vmin);
+  }
 }
 
 .sectionTitle {
@@ -40,7 +44,7 @@ p {
   line-height: calc(1.5vw + 1.5vh + .5vmin);
   margin: 0;
   @include phoneLargePortrait {
-    font-size: calc(0.6vw + 0.6vh + .5vmin);
+    font-size: calc(0.8vw + 0.8vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -51,7 +55,7 @@ i {
   line-height: calc(0.35vw + 0.35vh + .5vmin);
   margin: 0;
   @include phoneLargePortrait {
-    font-size: calc(0.6vw + 0.6vh + .5vmin);
+    font-size: calc(0.8vw + 0.8vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -60,7 +64,7 @@ label {
   letter-spacing: -0.0001vw;
   line-height: calc(1.2vw + 1.2vh + .5vmin);
   @include phoneLargePortrait {
-    font-size: calc(0.6vw + 0.6vh + .5vmin);
+    font-size: calc(0.8vw + 0.8vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -70,7 +74,7 @@ a {
   letter-spacing: -0.0001vw;
   line-height: calc(0.35vw + 0.35vh + .5vmin);
   @include phoneLargePortrait {
-    font-size: calc(0.6vw + 0.6vh + .5vmin);
+    font-size: calc(0.8vw + 0.8vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -79,7 +83,7 @@ span {
   letter-spacing: -0.0001vw;
   line-height: calc(1.2vw + 1.2vh + .5vmin);
   @include phoneLargePortrait {
-    font-size: calc(0.5vw + 0.5vh + .5vmin);
+    font-size: calc(0.8vw + 0.8vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -329,6 +333,9 @@ span {
   background-image: url('images/wit_summit_logo.svg');
   @include tabletLandscape {
    width: 16vw;
+  }
+  @include phoneLargePortrait {
+    width: 26vw;
   }
 }
 
@@ -585,6 +592,7 @@ label:after{
   border-bottom: 1px solid white;
   padding-bottom: rem(40px);
 }
+
 .part {
   line-height: calc(2vw + 2vh + .5vmin);
   padding-top: rem(50px);
@@ -596,6 +604,13 @@ label:after{
     padding-top: 0;
   }
 }
+.bottomTrackBox:hover {
+  color: #F0603C;
+  cursor: pointer;
+  .borderBottom {
+    border-bottom: 1px solid #F0603C;
+  }
+}
 
 .speakerName:hover {
   text-decoration: underline;
@@ -604,6 +619,14 @@ label:after{
   height: 20vh;
   @include tabletLandscape {
     height: auto;
+  }
+}
+
+.topTrackBox:hover {
+  color: #F0603C;
+  cursor: pointer;
+  .borderBottom {
+    border-bottom: 1px solid #F0603C;
   }
 }
 .titleBox {
@@ -636,6 +659,7 @@ label:after{
 }
 .backgroundTablet {
   @include tabletLandscape {
+    margin-top: 5%;
     background-color: rgba(255, 255, 255, 0.06);
   }
 }
