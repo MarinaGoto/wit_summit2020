@@ -11,6 +11,12 @@ h2 {
   font-size: calc(2.8vw + 2.8vh + .5vmin);
   letter-spacing: -0.0001vw;
   line-height: calc(4vw + 4vh + .5vmin);
+
+  @include tabletLandscape {
+    font-size: calc(2vw + 2vh + .5vmin);
+    letter-spacing: -0.0001vw;
+    line-height: calc(3.2vw + 3.2vh + .5vmin);
+  }
 }
 h3 {
   font-size: calc(1.6vw + 1.6vh + .5vmin);
@@ -69,11 +75,11 @@ a {
   }
 }
 span {
-  font-size: calc(0.3vw + 0.3vh + .5vmin);
+  font-size: calc(0.4vw + 0.4vh + .5vmin);
   letter-spacing: -0.0001vw;
-  line-height: calc(2vw + 2vh + .5vmin);
+  line-height: calc(1.2vw + 1.2vh + .5vmin);
   @include phoneLargePortrait {
-    font-size: calc(0.6vw + 0.6vh + .5vmin);
+    font-size: calc(0.5vw + 0.5vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -128,9 +134,6 @@ span {
 }
 .container-padding {
   padding: 5%;
-  @include phoneLargePortrait {
-    padding: 10% 5%;
-  }
 }
 .top-bar {
   display: flex;
@@ -186,7 +189,7 @@ span {
 }
 
 .sponsor {
-  padding: 10vw 6vw;
+  padding: 10vw 0;
 
   @include tabletLandscape {
     padding: 6vw 0;
@@ -233,6 +236,9 @@ span {
 
 .cell {
   padding-right: 15%;
+  @include tabletLandscape {
+    padding-right: 20%;
+  }
 }
 
 .border {
@@ -310,21 +316,6 @@ span {
   }
 }
 
-.sponsorImg {
-  width: 13%;
-  height: 15vh;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-
-  @include tabletLandscape {
-    width: 8%;
-  }
-  @include phoneLargePortrait {
-    height: 10vh;
-  }
-}
-
 .lunch {
   position: absolute;
   margin-top: 12%;
@@ -334,6 +325,12 @@ span {
   background-position: top;
   background-size: contain;
   background-image: url('images/lunch_graphics.svg');
+
+  @include tabletLandscape {
+    margin-top: 40%;
+    width: 18vw;
+    height: 15vh;
+  }
 }
 .team {
   background-image: url('images/team.png');
@@ -358,6 +355,25 @@ span {
 }
 
 // Sponsors logo
+
+
+.sponsorImg {
+  opacity: 0.7;
+  width: 20%;
+  height: 5vh;
+  margin: rem(20px);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+
+  @include tabletLandscape {
+    width: 20%;
+    height: 15vh;
+  }
+  @include phoneLargePortrait {
+    height: 10vh;
+  }
+}
 
 .soprasteria {
   background-image: url('images/sponsors/Sopra_Steria_logo.svg');
@@ -557,20 +573,17 @@ label:after{
   padding-bottom: rem(40px);
 }
 .part {
+  line-height: calc(2vw + 2vh + .5vmin);
   padding-top: rem(50px);
 }
 .bottomTrackBox {
   padding-top: 90%;
   padding-bottom: 10vh;
   @include tabletLandscape {
-    padding-top: 5%;
+    padding-top: 0;
   }
 }
-.speakerName {
-  font-size: 1vw;
-  letter-spacing: -0.0001vw;
-  line-height: 3vw;
-}
+
 .speakerName:hover {
   text-decoration: underline;
 }
@@ -582,10 +595,36 @@ label:after{
 }
 .titleBox {
   padding-bottom: 4vh;
+  @include tabletLandscape {
+    padding-bottom: 2vh;
+  }
 }
 .noneTablet {
   @include tabletLandscape {
     display: none;
   }
 }
+
+.paddingTablet {
+  @include tabletLandscape {
+    padding: 1% 5%;
+  }
+}
+.paddingBotTablet  {
+  @include tabletLandscape {
+    padding-bottom: 5vh;
+  }
+}
+
+.noneSidePaddingTablet {
+  @include tabletLandscape {
+    padding: 5% 0;
+  }
+}
+.backgroundTablet {
+  @include tabletLandscape {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+}
+
 
