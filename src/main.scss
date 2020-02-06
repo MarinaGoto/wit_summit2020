@@ -155,8 +155,7 @@ span {
   margin: -7vh 20% 0 20%;
   text-align: center;
   @include phoneLargePortrait {
-    height: 65vh;
-    padding-top: 20vh;
+    height: 87vh;
     margin: 0;
   }
 }
@@ -621,7 +620,7 @@ label:after{
 
 .paddingTablet {
   @include tabletLandscape {
-    padding: 1% 5%;
+    padding: 5% 5% 1% 5%;
   }
 }
 .paddingBotTablet  {
