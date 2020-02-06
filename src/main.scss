@@ -813,6 +813,65 @@ label:after{
 .place {
   float: right;
   opacity: 0.5;
-  @include phoneLargePortrait {
+}
+
+
+
+
+
+@keyframes rotateRight {
+  from {
+    margin-left: -1000px;
   }
+
+  to {
+    margin-left: 1000px;
+  }
+}
+
+@include phoneLargePortrait {
+  @keyframes rotateRight {
+    from {
+      margin-left: -500px;
+    }
+
+    to {
+      margin-left: 500px;
+    }
+  }
+}
+
+@keyframes rotateLeft {
+  from {
+    margin-left: 1000px;
+  }
+
+  to {
+    margin-left: -1000px;
+  }
+}
+
+@include phoneLargePortrait {
+  @keyframes rotateLeft {
+    from {
+      margin-left: 500px;
+    }
+
+    to {
+      margin-left: -500px;
+    }
+  }
+}
+
+.rotateText {
+  animation-duration: 20s;
+  animation-name: rotateRight;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.rotateTextBack {
+  animation-duration: 20s;
+  animation-name: rotateLeft;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
