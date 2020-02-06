@@ -111,6 +111,14 @@ module.exports = {
       template: "./src/templates/xai/index.html",
       filename: 'xai/index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/templates/uxintro/index.html",
+      filename: 'uxintro/index.html'
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/templates/design/index.html",
+        filename: 'design/index.html'
+    }),
 
 
     new MiniCssExtractPlugin({template: "./src/main.scss"}),

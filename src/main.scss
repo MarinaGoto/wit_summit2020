@@ -319,24 +319,7 @@ span {
   }
 }
 
-.speakerImg {
-  width: 90%;
-  height: 30vh;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-  z-index: 1;
 
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-
-  @include laptopSmall {
-    width: 60%;
-  }
-  @include phoneLargePortrait {
-    height: 22vh;
-  }
-}
 
 .unity {
   height: 70vh;
@@ -385,6 +368,25 @@ span {
 }
 
 // Speakers images
+
+.speakerImg {
+  width: 90%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  z-index: 1;
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
+  @include laptopSmall {
+    width: 60%;
+  }
+  @include phoneLargePortrait {
+    height: 22vh;
+  }
+}
 
 .maja {
   margin-bottom: 6%;
