@@ -224,7 +224,7 @@ span {
   padding: 10vw 0;
 
   @include tabletLandscape {
-    padding: 6vw 0;
+    padding: 11vw 0;
   }
 }
 
@@ -449,6 +449,9 @@ span {
 
 .crayon {
   background-image: url('images/sponsors/crayon.png');
+}
+.makerspace {
+  background-image: url('images/sponsors/makerspace.png');
 }
 
 .pepsimax {
