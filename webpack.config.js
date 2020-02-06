@@ -107,6 +107,11 @@ module.exports = {
       template: "./src/templates/nlp/index.html",
       filename: 'nlp/index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/templates/xai/index.html",
+      filename: 'xai/index.html'
+    }),
+
 
     new MiniCssExtractPlugin({template: "./src/main.scss"}),
   ],

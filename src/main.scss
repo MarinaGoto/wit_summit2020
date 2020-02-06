@@ -29,7 +29,7 @@ h4 {
   letter-spacing: -0.0001vw;
   line-height: 2.5vw;
   @include phoneLargePortrait {
-    font-size: calc(1vw + 1vh + .5vmin);
+    font-size: calc(1.5vw + 1.5vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -44,7 +44,7 @@ p {
   line-height: calc(1.5vw + 1.5vh + .5vmin);
   margin: 0;
   @include phoneLargePortrait {
-    font-size: calc(0.8vw + 0.8vh + .5vmin);
+    font-size: calc(1vw + 1vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -54,7 +54,7 @@ li {
   line-height: calc(1.5vw + 1.5vh + .5vmin);
   margin: 0;
   @include phoneLargePortrait {
-    font-size: calc(0.8vw + 0.8vh + .5vmin);
+    font-size: calc(1vw + 1vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -65,7 +65,7 @@ i {
   line-height: calc(0.35vw + 0.35vh + .5vmin);
   margin: 0;
   @include phoneLargePortrait {
-    font-size: calc(0.8vw + 0.8vh + .5vmin);
+    font-size: calc(1vw + 1vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -74,7 +74,7 @@ label {
   letter-spacing: -0.0001vw;
   line-height: calc(1.2vw + 1.2vh + .5vmin);
   @include phoneLargePortrait {
-    font-size: calc(0.8vw + 0.8vh + .5vmin);
+    font-size: calc(1vw + 1vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -84,7 +84,7 @@ a {
   letter-spacing: -0.0001vw;
   line-height: calc(0.35vw + 0.35vh + .5vmin);
   @include phoneLargePortrait {
-    font-size: calc(0.8vw + 0.8vh + .5vmin);
+    font-size: calc(1vw + 1vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -96,7 +96,7 @@ span {
   letter-spacing: -0.0001vw;
   line-height: calc(1.2vw + 1.2vh + .5vmin);
   @include phoneLargePortrait {
-    font-size: calc(0.8vw + 0.8vh + .5vmin);
+    font-size: calc(1vw + 1vh + .5vmin);
     line-height: calc(2vw + 2vh + .5vmin);
   }
 }
@@ -329,6 +329,13 @@ span {
 
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+
+  @include laptopSmall {
+    width: 60%;
+  }
+  @include phoneLargePortrait {
+    height: 22vh;
+  }
 }
 
 .unity {
@@ -383,15 +390,18 @@ span {
   margin-bottom: 6%;
   margin-left: -45%;
   background-image: url('images/speakers/maja.png');
-  @include phoneLargePortrait {
-    margin-left: unset;
-  }
-  @include phoneLargePortrait {
-    height: 22vh;
+
+  @include laptopSmall {
+    margin-left: -15%;
   }
 }
 .alise {
+  margin-bottom: 6%;
+  margin-left: -45%;
   background-image: url('images/speakers/alise.png');
+  @include laptopSmall {
+    margin-left: -15%;
+  }
 }
 .alina {
   background-image: url('images/speakers/alina.png');
@@ -711,8 +721,13 @@ label:after{
   text-decoration: underline;
   z-index: 10;
 
-  @include phoneLargePortrait {
+  @include tabletLandscape {
+    line-height: 5vh;
+  }
+  @include tabletPortrait {
     font-size: 10vw;
+    line-height: 9vh;
+
   }
 }
 .level {
@@ -740,5 +755,10 @@ label:after{
 
   @include tabletPortrait {
     flex-direction: column;
+  }
+}
+.padding-bottom {
+  @include tabletPortrait {
+    margin-bottom: 15%;
   }
 }
