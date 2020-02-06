@@ -104,8 +104,8 @@ module.exports = {
     //
     new HtmlWebpackPlugin({template: "./src/templates/index.html"}),
     new HtmlWebpackPlugin({
-      template: "./src/templates/test/index.html",
-      filename: 'test/index.html'
+      template: "./src/templates/nlp/index.html",
+      filename: 'nlp/index.html'
     }),
 
     new MiniCssExtractPlugin({template: "./src/main.scss"}),

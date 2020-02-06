@@ -96,6 +96,10 @@ span {
   @include tabletLandscape {
     line-height: 4vw;
   }
+  @include phoneLargePortrait {
+    font-size: calc(1vw + 1vh + .5vmin);
+    line-height: calc(2vw + 2vh + .5vmin);
+  }
 }
 
 .underlineTablet {
@@ -611,8 +615,18 @@ label:after{
     border-bottom: 1px solid #F0603C;
   }
 }
+.bottomTrackBox:active {
+  color: #F0603C;
+  cursor: pointer;
+  .borderBottom {
+    border-bottom: 1px solid #F0603C;
+  }
+}
 
 .speakerName:hover {
+  text-decoration: underline;
+}
+.speakerName:active {
   text-decoration: underline;
 }
 .topTrackBox {
@@ -623,6 +637,13 @@ label:after{
 }
 
 .topTrackBox:hover {
+  color: #F0603C;
+  cursor: pointer;
+  .borderBottom {
+    border-bottom: 1px solid #F0603C;
+  }
+}
+.topTrackBox:active {
   color: #F0603C;
   cursor: pointer;
   .borderBottom {
