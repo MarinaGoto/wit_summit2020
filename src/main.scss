@@ -225,9 +225,6 @@ span {
   @include tabletLandscape {
     padding: 6vw 0;
   }
-  @include phoneLargePortrait {
-    padding-bottom: 0;
-  }
 }
 
 .speaker-padding{
@@ -430,15 +427,19 @@ span {
 .sponsorImg {
   opacity: 0.7;
   width: 20%;
-  height: 5vh;
-  margin: rem(20px);
+  height: 7vh;
+  margin-top: 15%;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: contain;
 
   @include tabletLandscape {
-    width: 15%;
-    height: 4vh;
+    width: 19%;
+    height: 7vh;
+  }
+  @include phoneLargePortrait {
+    width: 20%;
+    height: 6vh;
   }
 }
 
@@ -447,7 +448,7 @@ span {
 }
 
 .crayon {
-  background-image: url('images/sponsors/Crayon.jpg');
+  background-image: url('images/sponsors/crayon.png');
 }
 
 .pepsimax {
@@ -479,7 +480,15 @@ span {
 }
 
 .cloudberries {
-  background-image: url('images/sponsors/paranoia_logo.png');
+  background-image: url('images/sponsors/cloudberries.png');
+}
+
+.scienta {
+  background-image: url('images/sponsors/scienta_logo.png');
+}
+
+.fjong {
+  background-image: url('images/sponsors/fjong.png');
 }
 
 
