@@ -116,8 +116,8 @@ module.exports = {
       filename: 'uxintro/index.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/templates/design/index.html",
-      filename: 'design/index.html'
+      template: "./src/templates/ux/index.html",
+      filename: 'ux/index.html'
     }),
     new HtmlWebpackPlugin({
       template: "./src/templates/codingintro/index.html",
