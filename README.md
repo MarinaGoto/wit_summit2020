@@ -1,6 +1,6 @@
-# WiT Oslo SUmmit 2020 Spalsh
+# WiT Oslo Summit 2020 Spalsh  http://summit2020.witoslo.com/
 
-Splash for the WiT Oslo SUmmit 2020
+Splash for the WiT Oslo Summit 2020
 
 ## Getting Started
 
