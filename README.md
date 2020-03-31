@@ -1,4 +1,4 @@
-# WiT Oslo Summit 2020 Spalsh  
+# WiT Oslo Summit 2020 Splash  
 
 Splash for the WiT Oslo Summit 2020 
 
